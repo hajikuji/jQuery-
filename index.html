@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jquery表单验证</title>
+<link href="css/normalize.css" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="wrap wrap-sm">
+	<div class="header"><h1>相亲吗，序员</h1></div>
+	<div class="form">
+	<form id="signup">
+		<div class="input-wrap">
+		<label>姓名</label>
+		<input data-rule='maxLength:5|minLength:1' type="text"
+		class="input-control" name="name">
+		<div id="name-input-error" class="input-error">姓名输入有误</div>
+		</div>
+		<div class="input-wrap">
+			<label>用户名</label>
+			<input data-rule='pattern:"^[a-z0-9]*$"|maxLength:18|minLength:4' type="text"
+			class="input-control" name="username">
+			<div id="username-input-error" class="input-error">用户名格式有误,最大长度为5</div>
+			</div>
+			<div class="input-wrap">
+				<label>介绍</label>
+				<input data-rule='required:false|maxLength:1024' type="text"
+				class="input-control" name="intro">
+				<div id="intro-input-error" class="input-error">介绍输入有误，最大长度为1024</div>
+				</div>
+				<div class="input-wrap">
+					<label>密码</label>
+					<input data-rule='minLength:6|maxLength:20' type="text"
+					class="input-control" name="password">
+					<div id="password-input-error" class="input-error">密码格式有误</div>
+					</div>
+					<div class="input-wrap">
+						<label>年龄</label>
+						<input data-rule='min:18' type="text"
+						class="input-control" name="age">
+						<div id="age-input-error" class="input-error">年龄格式有误</div>
+						</div>
+						<button type="submit">注册</button>		
+	</form>
+	</div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/input.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.wrap {
+margin: 0 auto;
+max-width: 800px;
+}
+.wrap-sm {
+max-width: 450px;
+}
+/**头部***/
+.header {
+margin-top: 30px;
+
+}
+h1 {
+margin: 0;
+}
+/*表单*/
+.form {
+margin-top: 15px;
+}
+.input-wrap {
+margin-bottom: 10px;
+}
+.input-control {
+padding: 5px 10px;
+width: 100%;
+border: 1px solid #000;
+}
+.input-error {
+color: #BD4B4D;
+display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
